@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcfl"
+version = "0.1.0"
+description = "HCFL: Hybrid Contribution-Driven Federated Learning for Fair and Efficient Optimization"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Younghwan Jeong" },
+  { name = "Sangshin Lee" },
+  { name = "Jinyoung Lee" },
+  { name = "Won Gi Choi", email = "cwk1412@keti.re.kr" },
+]
+keywords = ["federated-learning", "contribution-estimation", "drug-discovery", "nvflare"]
+
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["hcfl*"]
+
+[project.scripts]
+hcfl-prepare = "hcfl.cli:prepare_data_main"
+hcfl-run = "hcfl.cli:run_main"

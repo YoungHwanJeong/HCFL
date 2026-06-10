@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "HCFL: Hybrid Contribution-Driven Federated Learning for Fair and Efficient Optimization"
+authors:
+  - family-names: Jeong
+    given-names: Younghwan
+    affiliation: "Korea Electronics Technology Institute (KETI)"
+  - family-names: Lee
+    given-names: Sangshin
+    affiliation: "Korea Electronics Technology Institute (KETI)"
+  - family-names: Lee
+    given-names: Jinyoung
+    affiliation: "Korea Electronics Technology Institute (KETI)"
+  - family-names: Choi
+    given-names: Won Gi
+    affiliation: "Korea Electronics Technology Institute (KETI)"
+    email: cwk1412@keti.re.kr
+license: MIT
+repository-code: "https://github.com/YoungHwanJeong/HCFL"
+version: 0.1.0
+preferred-citation:
+  type: article
+  title: "HCFL: Hybrid Contribution-Driven Federated Learning for Fair and Efficient Optimization"
+  authors:
+    - family-names: Jeong
+      given-names: Younghwan
+    - family-names: Lee
+      given-names: Sangshin
+    - family-names: Lee
+      given-names: Jinyoung
+    - family-names: Choi
+      given-names: Won Gi
+  journal: "Scientific Reports"
+  year: 2026

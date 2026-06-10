@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+
+# Data & artifacts (downloaded / generated)
+data/
+!data/.gitkeep
+results/
+*.log
+runs/
+workspace_*/
+/tmp_*/
+
+# NVFlare simulator workspaces
+simulator_workspace/
+
+# Model / checkpoint caches
+*.pt
+*.ckpt
+.cache/
+hf_cache/
+
+# OS
+.DS_Store

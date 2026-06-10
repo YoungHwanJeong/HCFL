@@ -1,0 +1,12 @@
+name: hcfl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # NOTE: On aarch64 + NVIDIA Blackwell (e.g. GB10), install torch from the
+      # CUDA 12.8 index first:
+      #   pip install torch --index-url https://download.pytorch.org/whl/cu128
+      # then run: pip install -r requirements.txt
+      - -r requirements.txt

@@ -1,0 +1,63 @@
+data:
+  name: FreeSolv
+  task: regression
+  num_classes: 1
+  data_root: data
+  dirichlet_alpha: 0.5
+  min_samples_per_client: 100
+  max_samples_per_client: 500
+  label_noise_std_frac: 0.1
+  test_frac: 0.1
+  val_frac: 0.1
+  max_smiles_len: 128
+  seed: 42
+model:
+  backbone_name: seyonec/ChemBERTa-zinc-base-v1
+  embedder_name: DeepChem/ChemBERTa-5M-MLM
+  head_hidden_dim: 256
+  head_dropout: 0.1
+  freeze_backbone_layers: 10
+federated:
+  num_clients: 50
+  participation_rate: 0.2
+  num_rounds: 50
+  local_epochs: 5
+  learning_rate: 2.0e-05
+  batch_size: 16
+  deadline: 1.0
+  cpu_cores_range:
+  - 2
+  - 16
+  memory_gb_range:
+  - 4
+  - 16
+  gpu_frac_range:
+  - 0.1
+  - 0.2
+contribution:
+  estimator: hybrid
+  alpha_init: 0.5
+  alpha_min: 0.2
+  alpha_max: 0.8
+  adapt_alpha: true
+  fim_batch_size: 32
+  fim_max_batches: 8
+  chi2_quantile: 0.95
+  density_threshold_quantile: 0.3
+  sparsity_power: 2.0
+  qmc_samples: 512
+  cov_shrinkage: 0.01
+  shape_penalty_weight: 0.1
+  vol_penalty_weight: 0.5
+  eps: 1.0e-08
+selection:
+  delta: 1.0
+  delta_in: 0.5
+  ema_gamma: 0.9
+  r_split: 3
+  tau_split: 0.5
+  failure_ema: 0.5
+  max_splits: 8
+seed: 42
+device: cuda
+output_dir: results
