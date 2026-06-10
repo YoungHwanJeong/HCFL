@@ -17,7 +17,12 @@ authors:
     email: cwk1412@keti.re.kr
 license: MIT
 repository-code: "https://github.com/YoungHwanJeong/HCFL"
+doi: 10.5281/zenodo.20623947
 version: 0.1.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20623947
+    description: "Zenodo archive of the software"
 preferred-citation:
   type: article
   title: "HCFL: Hybrid Contribution-Driven Federated Learning for Fair and Efficient Optimization"

@@ -1,5 +1,7 @@
 # HCFL
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20623947.svg)](https://doi.org/10.5281/zenodo.20623947)
+
 Reference code for **HCFL: Hybrid Contribution-Driven Federated Learning for Fair
 and Efficient Optimization**. Built on [NVFlare](https://github.com/NVIDIA/NVFlare),
 evaluated on molecular datasets from [PyTDC](https://tdcommons.ai/).
@@ -51,7 +53,7 @@ pytest tests/ -q
 ## Code availability
 
 This repository contains the custom code implementing HCFL. The version used in
-the paper is archived on Zenodo: .
+the paper is archived on Zenodo: https://doi.org/10.5281/zenodo.20623947
 
 ## Cite
 
